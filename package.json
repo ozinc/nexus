@@ -27,10 +27,9 @@
     "yarn.lock"
   ],
   "main": "dist",
-  "module": "dist-esm",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "yarn -s clean && tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json",
+    "build": "yarn -s clean && tsc -p tsconfig.cjs.json",
     "clean": "rm -rf dist*",
     "deploy-site": "yarn && yarn build",
     "dev": "tsc -p tsconfig.cjs.json -w",
